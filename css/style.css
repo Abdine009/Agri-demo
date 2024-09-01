@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'Amazon Ember';
+    src: url('../police/Amazon\ Ember\ Bold\ Italic.ttf') format('ttf'),
+         url('../police/Amazon\ Ember\ Bold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amazon Ember';
+    src: url('../police/Amazon\ Ember\ Display.otf') format('otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:focus {
+    background-color: #006D21; /* Couleur de sélection */
+    color: #ffff; /* Couleur du texte */
+}
+
+
+body {
+    font-family:fantasy;
+}
+
+
+.navbar-custom {
+    opacity: 0.8; /* Ajustez cette valeur pour changer l'opacité */
+}
+
+
+ .search-bar  {
+     margin: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #f1f1f1;
+} 
+ .search-bar .dropdown-toggle {
+    border: none;
+    border-right: 1px solid #ccc;
+    background-color: #e7e7e7;
+    padding: 0.5rem 1rem;
+    border-radius: 0;
+} 
+ .search-bar input {
+    flex-grow: 1;
+    border: none;
+    padding: 0.5rem 1rem;
+    outline: none;
+    box-shadow: none;
+    background: none;
+} 
+.search-bar button {
+    border: none;
+    background-color: #31DE51;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: #333;
+
+} 
+.search-bar button:hover {
+    background-color: #f3a847;
+}
+.search-bar svg {
+    fill: currentColor;
+}
+
+
+.carousel-item {
+    height: 35rem;
+    background: #777;
+    position: relative;
+
+}
+
+    .gradient-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .carousel-caption {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-25%);
+        text-align: left;
+        width: 75%;
+    }
+    .carousel-caption h1 {
+        background: rgba(0, 0, 0, 0.5); /* Optionnel : fond semi-transparent pour meilleure lisibilité */
+        color: white;
+        padding: 15px;
+        border-radius: 10px;
+    }
+
+   
+
+
+    .category-card {
+        transition: transform 0.2s;
+        cursor: pointer;
+      }
+  
+      .category-card:hover {
+        transform: scale(1.05);
+      }
+  
+      .category-card img {
+        height: 150px;
+        object-fit: cover;
+      }
+  
+      .category-card-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: center;
+      }
+  
+      .category-section-title {
+        color: white;
+        margin-top: 10px;
+      }
+  
+      .view-more {
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+  
+      .category-container {
+        background-color: #343a40;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+.no-border{
+    border : none !important;
+    border-radius: 0 !important;
+}
+    
+.img-fluid-full-height {
+    height: 100% !important;
+    width: 100% !important;
+  }
+
+  .object-fit-cover {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .card {
+    background-color: #DBDDC7;
+  }
+
+
+
+    /* Styles pour les offres */
+    .offres-section {
+        background-color: #E0F2D3; /* Fond vert */
+        padding: 50px 0;
+      }
+  
+      .offres-section .card {
+        background-color: #5cb85c; /* Carte verte pour les offres */
+        border: none;
+        color: white;
+      }
+  
+      /* Styles pour les demandes */
+      .demandes-section {
+        background-color: #f0f8ff; /* Fond bleu clair */
+        padding: 50px 0;
+      }
+  
+      .demandes-section .card {
+        background-color: #1e90ff; /* Carte bleue pour les demandes */
+        border: none;
+        color: white;
+      }
+  
+      /* Ajustements pour le texte et les titres des cartes */
+      .card-body {
+        text-align: center; /* Centrer le texte dans le corps de la carte */
+      }
+  
+      .card-title {
+        font-size: 1.5rem; /* Taille de police pour les titres de carte */
+      }
+
+
+      .marquee-container {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
+      .marquee {
+        display: inline-block;
+        white-space: nowrap;
+        animation: marquee 35s linear infinite;
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }

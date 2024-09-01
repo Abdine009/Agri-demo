@@ -1,0 +1,1167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agri demo</title>
+    <link rel="stylesheet" href="police/Amazon Ember Bold Italic.ttf">
+    <link rel="stylesheet" href="police/Amazon Ember Bold.ttf">
+    <link rel="stylesheet" href="police/Amazon Ember Display.otf">
+
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="chemin/vers/votre/jquery.waypoints.min.js"></script>
+    <script src="chemin/vers/votre/jquery.counterup.min.js"></script>
+
+</head>
+  <body>
+
+
+
+    <nav class="navbar navbar-dark bg-dark fixed-top navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Agri demo</a>
+
+
+          <!-- <form class="d-flex mt-3 custom-search-bar" role="search">
+            <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+
+            
+
+          </form> -->
+
+          <span class="search-bar mr-sm-2">
+            <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Toutes les catégories
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Toutes nos catégories</a></li>
+                    <li><a class="dropdown-item" href="#">Céréales</a></li>
+                    <li><a class="dropdown-item" href="#">Légumineuses</a></li>
+                    <li><a class="dropdown-item" href="#">Oléagineux</a></li>
+                    <li><a class="dropdown-item" href="#">Fruits et Légumes</a></li>
+                    <li><a class="dropdown-item" href="#">Fibres</a></li>
+                    <li><a class="dropdown-item" href="#">Fourragères</a></li>
+                </ul>
+            </div>
+            <input type="search" class="form-control" placeholder="Rechercher..." aria-label="Search">
+            <button type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+            </button>
+          </span>
+        
+        <div>
+
+          <button class="navbar-toggler mt-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Agri demo</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="html/offre.html">Offre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="html/demande.html">Demande</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="html/rejoindreLaCommunaute.html">Rejoindre le Réseau</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">En savoir plus</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">A propos de nous</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="html/login.html">Connexion</a>
+                  </li>
+               
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+      <!-- Carousel-->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="img/africains-recoltent-legumes (1).jpg" class="d-block w-100" alt="image1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="">Découvrez nos offres agricoles</h1>
+                    <button class="btn btn-success mt-3"> Nos offres</button> 
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/africains-recoltent-legumes.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="">Etes-vous fournisseur de produits agricoles ?</h1>
+                    <button class="btn btn-success mt-3"> Voir les demandes</button> 
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="5000">
+                <img src="img/WhatsApp Image 2024-06-14 at 2.26.14 PM.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="">Réjoignez notre réseau agricole</h1>
+                    <button class="btn btn-success mt-3"> Rejoindre le réseau</button> 
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <div class="container mb-3">
+
+        <div class="col">
+
+            
+
+            <div class="row my-3">
+
+                <div class="dropdown">
+                    <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        Publier une demande
+                    </button>
+                    <form class="dropdown-menu p-4">
+                      <div class="mb-3">
+                        <label for="quantite" class="form-label">Quantité</label>
+                        <input type="quantite" class="form-control" id="quantite" placeholder="00.0">
+                      </div>
+                      <div class="mb-3">
+                        <div class="dropdown">
+                            <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Disponibilité
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><button class="dropdown-item" type="button">Disponible</button></li>
+                              <li><button class="dropdown-item" type="button">En rupture de stock</button></li>
+                              <li><button class="dropdown-item" type="button">En commande</button></li>
+                              <li><button class="dropdown-item" type="button">A venir</button></li>
+                            </ul>
+                        </div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="prix" class="form-label">prix</label>
+                        <input type="prix" class="form-control" id="prix">
+                      </div>
+                      <div class="mb-3">
+                        <label for="Recherche" class="form-label">Rechercher</label>
+                        <input type="search" class="form-control" id="Recherche">
+                      </div>
+                      <div class="dropdown">
+                        <button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Offre ou Demande
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><button class="dropdown-item" type="button">Offre</button></li>
+                          <li><button class="dropdown-item" type="button">Demande</button></li>
+                        </ul>
+                    </div>
+                      <div class="mb-3">
+                      </div>
+                      <button type="submit" class="btn btn-success">Publier</button>
+                    </form>
+                  </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    
+  
+    <div class="container mt-4">
+        <div class="row">
+          <div class="col">
+            <div class="row row-cols-1 row-cols-md-2 g-4 bg-white h-100 w-100">
+              <h3 class="text-dark mt-1">Fibres</h3>
+              <div class="col mt-1">
+                <div class="card no-border">
+                  <img src="img/Fibres/download.jpg" class="card-img-top no-border" alt="...">
+                  <div class="justify-content-start">
+                    <h7 class="card-title">Orange</h7>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-1">
+                <div class="card no-border">
+                  <img src="img/Fibres/download.jpg" class="card-img-top no-border" alt="...">
+                  <div class="justify-content-start">
+                    <h7 class="card-title">Fraise</h7>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card no-border">
+                  <img src="img/Fibres/download (1).jpg" class="card-img-top no-border" alt="...">
+                  <div class="justify-content-start">
+                    <h7 class="card-title">Pomme</h7>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="row row-cols-1 row-cols-md-2 g-4 bg-white h-100 w-100 mt-3">
+              <h3 class="text-dark mt-1">Oléagineux</h3>
+              <div class="col mt-1">
+                <div class="card no-border">
+                  <img src="img/Oléagineux/OIP (4).jpg" class="card-img-top no-border" alt="...">
+                  <div class="justify-content-start">
+                    <h7 class="card-title">Mangue</h7>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-1">
+                <div class="card no-border">
+                  <img src="img/Oléagineux/OIP (3).jpg" class="card-img-top no-border" alt="...">
+                  <div class="justify-content-start">
+                    <h7 class="card-title">Orange</h7>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card no-border">
+                  <img src="img/Oléagineux/OIP (2).jpg" class="card-img-top no-border" alt="...">
+                  <div class="justify-content-start">
+                    <h7 class="card-title">Fraise</h7>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3 no-border">
+                  <img src="img/Oléagineux/OIP (1).jpg" class="card-img-top no-border" alt="...">
+                  <div class="justify-content-start">
+                    <h7 class="card-title">Pomme</h7>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="row row-cols-1 row-cols-md-2 g-4 bg-white h-100 w-100 mt-3">
+              <h3 class="text-dark mt-1">Légumes</h3>
+              <div class="col mt-1">
+                <div class="card no-border">
+                  <img src="img/Légumes/OIP (5).jpg" class="card-img-top no-border" alt="...">
+                  <div class="justify-content-start">
+                    <h7 class="card-title">Mangue</h7>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-1">
+                <div class="card no-border">
+                  <img src="img/Légumes/OIP (3).jpg" class="card-img-top no-border" alt="...">
+                  <div class="justify-content-start">
+                    <h7 class="card-title">Orange</h7>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card no-border">
+                  <img src="img/Légumes/OIP (2).jpg" class="card-img-top no-border" alt="...">
+                  <div class="justify-content-start">
+                    <h7 class="card-title">Fraise</h7>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3 no-border">
+                  <img src="img/Légumes/OIP (1).jpg" class="card-img-top no-border" alt="...">
+                  <div class="justify-content-start">
+                    <h7 class="card-title">Pomme</h7>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="row row-cols-1 row-cols-md-2 g-4 bg-white h-100 w-100 mt-3">
+              <h3 class="text-dark mt-1">Fourragères</h3>
+              <div class="col mt-1">
+                <div class="card no-border">
+                  <img src="img/Fourragères/OIP (1).jpg" class="card-img-top no-border" alt="...">
+                  <div class="justify-content-start">
+                    <h7 class="card-title">Mangue</h7>
+                  </div>
+                </div>
+              </div>
+              <div class="col mt-1">
+                <div class="card no-border">
+                  <img src="img/Fourragères/OIP (2).jpg" class="card-img-top no-border" alt="...">
+                  <div class="justify-content-start">
+                    <h7 class="card-title">Orange</h7>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card no-border">
+                  <img src="img/Fourragères/OIP (3).jpg" class="card-img-top no-border" alt="...">
+                  <div class="justify-content-start">
+                    <h7 class="card-title">Fraise</h7>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card mb-3 no-border">
+                  <img src="img/Fourragères/OIP (4).jpg" class="card-img-top no-border" alt="...">
+                  <div class="justify-content-start">
+                    <h7 class="card-title">Pomme</h7>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="fixed-bottom">
+        <a href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0"/>
+            </svg>
+        </a>
+      
+      
+    </div>
+
+
+
+
+    <!-- <div class="container">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="row row-cols-1 row-cols-md-2 g-4 bg-white h-100 w-100 mt-3 mb-3">
+                    
+                    <h3 class=" text-dark mt-1 ">Fruits</h3>
+                    <span></span>
+                    <div class="col mt-1">
+                        <div class="card no-border">
+                            <img src="img/Fruits/download.jpg" class="card-img-top no-border" alt="...">
+                            <div class=" justify-content-start">
+                                <h7 class="card-title">Mangue</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mt-1">
+                        <div class="card no-border">
+                            <img src="img/Fruits/OIP (1).jpg" class="card-img-top no-border" alt="...">
+                            <div class="justify-content-start">
+                                <h7 class="card-title">Orange</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card no-border">
+                            <img src="img/Fruits/OIP (2).jpg" class="card-img-top no-border" alt="...">
+                            <div class="justify-content-start">
+                                <h7 class="card-title">Fraise</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3 no-border">
+                            <img src="img/Fruits/OIP (4).jpg" class="card-img-top no-border" alt="...">
+                            <div class="justify-content-start">
+                                <h7 class="card-title">Pomme</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="">
+                        <h6 class=" text-black mb-3">Voir Plus</h6>
+
+                    </a>
+                    <span></span>
+                </div>
+            </div>
+
+
+
+            <div class="col">
+                <div class="row row-cols-1 row-cols-md-2 g-4 bg-white h-100 w-100 mt-3">
+                    
+                    <h3 class=" text-dark mt-1 ">Céréales</h3>
+                    <span></span>
+                    <div class="col mt-1">
+                        <div class="card no-border">
+                            <img src="img/Céréales/OIP (1).jpg" class="card-img-top no-border" alt="...">
+                            <div class=" justify-content-start">
+                                <h7 class="card-title">Mangue</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mt-1">
+                        <div class="card no-border">
+                            <img src="img/Céréales/OIP (2).jpg" class="card-img-top no-border" alt="...">
+                            <div class="justify-content-start">
+                                <h7 class="card-title">Orange</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card no-border">
+                            <img src="img/Céréales/OIP (3).jpg" class="card-img-top no-border" alt="...">
+                            <div class="justify-content-start">
+                                <h7 class="card-title">Fraise</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3 no-border">
+                            <img src="img/Céréales/OIP (5).jpg" class="card-img-top no-border" alt="...">
+                            <div class="justify-content-start">
+                                <h7 class="card-title">Pomme</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="">
+                        <h6 class=" text-black mb-3">Voir Plus</h6>
+
+                    </a>
+                    <span></span>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="row row-cols-1 row-cols-md-2 g-4 bg-white h-100 w-100 mt-3">
+                    
+                    <h3 class=" text-dark mt-1 ">Fibres</h3>
+                    <span></span>
+                    <div class="col mt-1">
+                        <div class="card no-border">
+                            <img src="img/Fibres/OIP (2).jpg" class="card-img-top no-border" alt="...">
+                            <div class=" justify-content-start">
+                                <h7 class="card-title">Mangue</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mt-1">
+                        <div class="card no-border">
+                            <img src="img/Fibres/OIP (1).jpg" class="card-img-top no-border" alt="...">
+                            <div class="justify-content-start">
+                                <h7 class="card-title">Orange</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card no-border">
+                            <img src="img/Fibres/download.jpg" class="card-img-top no-border" alt="...">
+                            <div class="justify-content-start">
+                                <h7 class="card-title">Fraise</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3 no-border">
+                            <img src="img/Fibres/download (1).jpg" class="card-img-top no-border" alt="...">
+                            <div class="justify-content-start">
+                                <h7 class="card-title">Pomme</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="">
+                        <h6 class=" text-black mb-3">Voir Plus</h6>
+
+                    </a>
+                    <span></span>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="row row-cols-1 row-cols-md-2 g-4 bg-white h-100 w-100 mt-3">
+                    
+                    <h3 class=" text-dark mt-1 ">Oléagineux</h3>
+                    <span></span>
+                    <div class="col mt-1">
+                        <div class="card no-border">
+                            <img src="img/Oléagineux/OIP (4).jpg" class="card-img-top no-border" alt="...">
+                            <div class=" justify-content-start">
+                                <h7 class="card-title">Mangue</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mt-1">
+                        <div class="card no-border">
+                            <img src="img/Oléagineux/OIP (3).jpg" class="card-img-top no-border" alt="...">
+                            <div class="justify-content-start">
+                                <h7 class="card-title">Orange</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card no-border">
+                            <img src="img/Oléagineux/OIP (2).jpg" class="card-img-top no-border" alt="...">
+                            <div class="justify-content-start">
+                                <h7 class="card-title">Fraise</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3 no-border">
+                            <img src="img/Oléagineux/OIP (1).jpg" class="card-img-top no-border" alt="...">
+                            <div class="justify-content-start">
+                                <h7 class="card-title">Pomme</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="">
+                        <h6 class=" text-black mb-3">Voir Plus</h6>
+
+                    </a>
+                    <span></span>
+                </div>
+            </div> -->
+
+
+
+            <!-- <div class="col">
+                <div class="row row-cols-1 row-cols-md-2 g-4 bg-white h-100 w-100 mt-3">
+                    
+                    <h3 class=" text-dark mt-1 ">Légumes</h3>
+                    <span></span>
+                    <div class="col mt-1">
+                        <div class="card no-border">
+                            <img src="img/Légumes/OIP (5).jpg" class="card-img-top no-border" alt="...">
+                            <div class=" justify-content-start">
+                                <h7 class="card-title">Mangue</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mt-1">
+                        <div class="card no-border">
+                            <img src="img/Légumes/OIP (3).jpg" class="card-img-top no-border" alt="...">
+                            <div class="justify-content-start">
+                                <h7 class="card-title">Orange</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card no-border">
+                            <img src="img/Légumes/OIP (2).jpg" class="card-img-top no-border" alt="...">
+                            <div class="justify-content-start">
+                                <h7 class="card-title">Fraise</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3 no-border">
+                            <img src="img/Légumes/OIP (1).jpg" class="card-img-top no-border" alt="...">
+                            <div class="justify-content-start">
+                                <h7 class="card-title">Pomme</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="">
+                        <h6 class=" text-black mb-3">Voir Plus</h6>
+
+                    </a>
+                    <span></span>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <div class="row row-cols-1 row-cols-md-2 g-4 bg-white h-100 w-100 mt-3">
+                    
+                    <h3 class=" text-dark mt-1 ">Fourragères</h3>
+                    <span></span>
+                    <div class="col mt-1">
+                        <div class="card no-border">
+                            <img src="img/Fourragères/OIP (1).jpg" class="card-img-top no-border" alt="...">
+                            <div class=" justify-content-start">
+                                <h7 class="card-title">Mangue</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mt-1">
+                        <div class="card no-border">
+                            <img src="img/Fourragères/OIP (2).jpg" class="card-img-top no-border" alt="...">
+                            <div class="justify-content-start">
+                                <h7 class="card-title">Orange</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card no-border">
+                            <img src="img/Fourragères/OIP (3).jpg" class="card-img-top no-border" alt="...">
+                            <div class="justify-content-start">
+                                <h7 class="card-title">Fraise</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card mb-3 no-border">
+                            <img src="img/Fourragères/OIP (4).jpg" class="card-img-top no-border" alt="...">
+                            <div class="justify-content-start">
+                                <h7 class="card-title">Pomme</h7>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="">
+                        <h6 class=" text-black mb-3">Voir Plus</h6>
+
+                    </a>
+                    <span></span>
+                </div>
+            </div>
+
+
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Section Offres -->
+ <section class="offres-section mt-4">
+    <div class="container">
+        <div class="row">
+
+            <div class="col">
+                <h2 class="text-start mb-4">Offres</h2>
+
+            </div>
+
+
+            <div class="dropdown col-1">
+               
+
+
+                <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                        <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                      </svg>
+                </button>
+                <ul class="dropdown-menu justify-content-center">
+                  <li>
+
+                    <div class="dropdown mx-4">
+                        <h6 class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Disponibilité</h6>
+
+                        <ul class="dropdown-menu">
+                          <li><button class="dropdown-item" type="button">Action</button></li>
+                          <li><button class="dropdown-item" type="button">Another action</button></li>
+                          <li><button class="dropdown-item" type="button">Something else here</button></li>
+                        </ul>
+                      </div>
+
+                  </li>
+
+                  <li>
+
+                    <div class="dropdown mx-4">
+                        <h6 class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Conditionnement</h6>
+
+                        <ul class="dropdown-menu">
+                          <li><button class="dropdown-item" type="button">Action</button></li>
+                          <li><button class="dropdown-item" type="button">Another action</button></li>
+                          <li><button class="dropdown-item" type="button">Something else here</button></li>
+                        </ul>
+                      </div>
+
+                  </li>
+                  <li>
+
+                    <div class="dropdown mx-4">
+                        <h6 class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Quantité</h6>
+
+                        <ul class="dropdown-menu">
+                          <li><button class="dropdown-item" type="button">Action</button></li>
+                          <li><button class="dropdown-item" type="button">Another action</button></li>
+                          <li><button class="dropdown-item" type="button">Something else here</button></li>
+                        </ul>
+                      </div>
+
+                  </li>
+                  <li>
+
+                    <div class="dropdown mx-4">
+                           <h6 class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Variété</h6>
+                        <ul class="dropdown-menu">
+                          <li><button class="dropdown-item" type="button">Action</button></li>
+                          <li><button class="dropdown-item" type="button">Another action</button></li>
+                          <li><button class="dropdown-item" type="button">Something else here</button></li>
+                        </ul>
+                      </div>
+
+                  </li>
+                 
+                </ul>
+              </div>
+
+            <div class="col-1 ">
+                    <a href="">Voir plus d'offres</a>
+            </div>
+
+        </div>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <!-- Début de la grille pour les offres -->
+        <div class="col">
+          <div class="row row-cols-1 row-cols-md-2 g-4 bg-white h-100 w-100 mt-3 mb-3">
+            <h3 class="text-dark mt-1 col-12">Fruits</h3>
+            <div class="col mt-1">
+              <div class="card no-border">
+                <img src="img/Fruits/download.jpg" class="card-img-top no-border" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Mangue</h5>
+                </div>
+              </div>
+            </div>
+
+            
+            <!-- Ajoutez les autres cartes pour les offres de fruits ici -->
+          </div>
+        </div>
+        <!-- Ajoutez d'autres colonnes pour d'autres catégories d'offres -->
+        <!-- Exemple : Céréales -->
+        <div class="col">
+          <div class="row row-cols-1 row-cols-md-2 g-4 bg-white h-100 w-100 mt-3 mb-3">
+            <h3 class="text-dark mt-1 col-12">Céréales</h3>
+            <div class="col mt-1">
+              <div class="card no-border">
+                <img src="img/Céréales/OIP (1).jpg" class="card-img-top no-border" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Blé</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Ajoutez les autres cartes pour les offres de céréales ici -->
+          </div>
+        </div>
+
+
+        <div class="col">
+            <div class="row row-cols-1 row-cols-md-2 g-4 bg-white h-100 w-100 mt-3 mb-3">
+              <h3 class="text-dark mt-1 col-12">Légumes</h3>
+              <div class="col mt-1">
+                <div class="card no-border">
+                  <img src="img/Légumes/OIP (5).jpg" class="card-img-top no-border" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Concombres</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Ajoutez les autres cartes pour les demandes de légumes ici -->
+            </div>
+          </div>
+
+
+
+          <div class="col">
+            <div class="row row-cols-1 row-cols-md-2 g-4 bg-white h-100 w-100 mt-3 mb-3">
+              <h3 class="text-dark mt-1 col-12">Légumes</h3>
+              <div class="col mt-1">
+                <div class="card no-border">
+                  <img src="img/Légumes/OIP (5).jpg" class="card-img-top no-border" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Concombres</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Ajoutez les autres cartes pour les demandes de légumes ici -->
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Demandes -->
+  <section class="demandes-section">
+    <div class="container">
+      <div class="row">
+
+        <div class="col">
+            <h2 class="text-start mb-4">Demandes</h2>
+
+        </div>
+
+        <div class="dropdown col-1">
+               
+
+
+            <button class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                    <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+            </button>
+            <ul class="dropdown-menu justify-content-center">
+              <li>
+
+                <div class="dropdown mx-4">
+                    <h6 class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Disponibilité</h6>
+
+                    <ul class="dropdown-menu">
+                      <li><button class="dropdown-item" type="button">Action</button></li>
+                      <li><button class="dropdown-item" type="button">Another action</button></li>
+                      <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                  </div>
+
+              </li>
+
+              <li>
+
+                <div class="dropdown mx-4">
+                    <h6 class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Conditionnement</h6>
+
+                    <ul class="dropdown-menu">
+                      <li><button class="dropdown-item" type="button">Action</button></li>
+                      <li><button class="dropdown-item" type="button">Another action</button></li>
+                      <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                  </div>
+
+              </li>
+              <li>
+
+                <div class="dropdown mx-4">
+                    <h6 class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Quantité</h6>
+
+                    <ul class="dropdown-menu">
+                      <li><button class="dropdown-item" type="button">Action</button></li>
+                      <li><button class="dropdown-item" type="button">Another action</button></li>
+                      <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                  </div>
+
+              </li>
+              <li>
+
+                <div class="dropdown mx-4">
+                       <h6 class=" dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Variété</h6>
+                    <ul class="dropdown-menu">
+                      <li><button class="dropdown-item" type="button">Action</button></li>
+                      <li><button class="dropdown-item" type="button">Another action</button></li>
+                      <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    </ul>
+                  </div>
+
+              </li>
+             
+            </ul>
+          </div>
+
+        <div class="col-1 ">
+                <a href="">Voir plus de demandes</a>
+        </div>
+
+    </div>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <!-- Début de la grille pour les demandes -->
+        <div class="col">
+          <div class="row row-cols-1 row-cols-md-2 g-4 bg-white h-100 w-100 mt-3 mb-3">
+            <h3 class="text-dark mt-1 col-12">Fruits</h3>
+            <div class="col mt-1">
+              <div class="card no-border">
+                <img src="img/Fruits/OIP (1).jpg" class="card-img-top no-border" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Oranges</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Ajoutez les autres cartes pour les demandes de fruits ici -->
+          </div>
+        </div>
+        <!-- Ajoutez d'autres colonnes pour d'autres catégories de demandes -->
+        <!-- Exemple : Légumes -->
+        <div class="col">
+          <div class="row row-cols-1 row-cols-md-2 g-4 bg-white h-100 w-100 mt-3 mb-3">
+            <h3 class="text-dark mt-1 col-12">Légumes</h3>
+            <div class="col mt-1">
+              <div class="card no-border">
+                <img src="img/Légumes/OIP (5).jpg" class="card-img-top no-border" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Concombres</h5>
+                </div>
+              </div>
+            </div>
+            <!-- Ajoutez les autres cartes pour les demandes de légumes ici -->
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="row row-cols-1 row-cols-md-2 g-4 bg-white h-100 w-100 mt-3 mb-3">
+              <h3 class="text-dark mt-1 col-12">Céréales</h3>
+              <div class="col mt-1">
+                <div class="card no-border">
+                  <img src="img/Céréales/OIP (1).jpg" class="card-img-top no-border" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Blé</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+           
+
+        <div class="col">
+            <div class="row row-cols-1 row-cols-md-2 g-4 bg-white h-100 w-100 mt-3 mb-3">
+              <h3 class="text-dark mt-1 col-12">Céréales</h3>
+              <div class="col mt-1">
+                <div class="card no-border">
+                  <img src="img/Céréales/OIP (1).jpg" class="card-img-top no-border" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Blé</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+    <div class="card text-bg-dark shadow-lg">
+        <img src="img/apropos.jpg" class="card-img" alt="...">
+       <div class="container">
+
+        <div class="card-img-overlay ">
+            <h1 class="card-title text-bg-success">L'UNIVERS DE L'ORGANISATION PAYSANNE ET DES FÉDÉRATIONS AGRICOLES</h1>
+            <h5 class="">Transformez les produits agricoles en entreprises prospères</h5>
+            <p class="card-text">Nous sommes dédiés à soutenir le secteur agricole en connectant les producteurs, les transformateurs et les entrepreneurs. Sur notre site, vous pouvez trouver une variété de produits agricoles.Nous sommes là pour vous aider à réaliser votre vision et à contribuer à la croissance durable de l'agriculture.</p>
+              <button class="btn btn-success"> Inscrivez-vous</button> 
+        </div>
+
+       </div>
+      </div>
+       
+    </div>
+   
+
+
+
+    <div class="row row-cols-1 row-cols-md-4 g-4 mt-4 bg-white">
+        <div class="col">
+          <div class="card h-100 container no-border">
+            <svg xmlns="http://www.w3.org/2000/svg" width="300" height="100" fill="currentColor" class="bi bi-basket2-fill" viewBox="0 0 16 16">
+                <path d="M5.929 1.757a.5.5 0 1 0-.858-.514L2.217 6H.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h.623l1.844 6.456A.75.75 0 0 0 3.69 15h8.622a.75.75 0 0 0 .722-.544L14.877 8h.623a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1.717L10.93 1.243a.5.5 0 1 0-.858.514L12.617 6H3.383zM4 10a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0zm3 0a1 1 0 0 1 2 0v2a1 1 0 1 1-2 0zm4-1a1 1 0 0 1 1 1v2a1 1 0 1 1-2 0v-2a1 1 0 0 1 1-1"/>
+              </svg>            <div class="card-body">
+              <h5 class="card-title">1200</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 container no-border">
+                <svg xmlns="http://www.w3.org/2000/svg" width="300" height="100" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
+                    <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                  </svg>            <div class="card-body">
+                <h5 class="card-title">500</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 container no-border">
+              <svg xmlns="http://www.w3.org/2000/svg" width="300" height="100" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                </svg>            <div class="card-body">
+                <h5 class="card-title">300</h5>
+                <div class="num">
+                    3000
+                </div>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+              </div>
+            </div>
+          </div>
+        <div class="col">
+          <div class="card h-100 no-border">
+            <svg xmlns="http://www.w3.org/2000/svg" width="300" height="100" fill="currentColor" class="bi bi-border" viewBox="0 0 16 16">
+                <path d="M0 0h.969v.5H1v.469H.969V1H.5V.969H0zm2.844 1h-.938V0h.938zm1.875 0H3.78V0h.938v1zm1.875 0h-.938V0h.938zm.937 0V.969H7.5V.5h.031V0h.938v.5H8.5v.469h-.031V1zm2.813 0h-.938V0h.938zm1.875 0h-.938V0h.938zm1.875 0h-.938V0h.938zM15.5 1h-.469V.969H15V.5h.031V0H16v.969h-.5zM1 1.906v.938H0v-.938zm6.5.938v-.938h1v.938zm7.5 0v-.938h1v.938zM1 3.78v.938H0V3.78zm6.5.938V3.78h1v.938zm7.5 0V3.78h1v.938zM1 5.656v.938H0v-.938zm6.5.938v-.938h1v.938zm7.5 0v-.938h1v.938zM.969 8.5H.5v-.031H0V7.53h.5V7.5h.469v.031H1v.938H.969zm1.875 0h-.938v-1h.938zm1.875 0H3.78v-1h.938v1zm1.875 0h-.938v-1h.938zm1.875-.031V8.5H7.53v-.031H7.5V7.53h.031V7.5h.938v.031H8.5v.938zm1.875.031h-.938v-1h.938zm1.875 0h-.938v-1h.938zm1.875 0h-.938v-1h.938zm1.406 0h-.469v-.031H15V7.53h.031V7.5h.469v.031h.5v.938h-.5zM0 10.344v-.938h1v.938zm7.5 0v-.938h1v.938zm8.5-.938v.938h-1v-.938zM0 12.22v-.938h1v.938zm7.5 0v-.938h1v.938zm8.5-.938v.938h-1v-.938zM0 14.094v-.938h1v.938zm7.5 0v-.938h1v.938zm8.5-.938v.938h-1v-.938zM.969 16H0v-.969h.5V15h.469v.031H1v.469H.969zm1.875 0h-.938v-1h.938zm1.875 0H3.78v-1h.938v1zm1.875 0h-.938v-1h.938zm.937 0v-.5H7.5v-.469h.031V15h.938v.031H8.5v.469h-.031v.5zm2.813 0h-.938v-1h.938zm1.875 0h-.938v-1h.938zm1.875 0h-.938v-1h.938zm.937 0v-.5H15v-.469h.031V15h.469v.031h.5V16z"/>
+              </svg>            <div class="card-body">
+              <h5 class="card-title">50 Hectares</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+    <!-- <div class="  mb-3 bg-white" style="max-width: 540px;">
+        <div class="row ">
+          <div class="col">
+            <img src="img/apropos.jpg" class="img-fluid rounded-start object-fit-cover " alt="...">
+          </div>
+          <div class="col-1">
+            <div class="card-body">
+              <h5 class="card-title">L'UNIVERS DE L'ORGANISATION PAYSANNE ET DES FÉDÉRATIONS AGRICOLES</h5>
+              <h5>Transformez les produits agricoles en entreprises prospères</h5>
+              <p class="card-text">Nous sommes dédiés à soutenir le secteur agricole en connectant les producteurs, les transformateurs et les entrepreneurs. Sur notre site, vous pouvez trouver une variété de produits agricoles.Nous sommes là pour vous aider à réaliser votre vision et à contribuer à la croissance durable de l'agriculture.</p>
+                <button class="btn btn-success"> Inscrivez-vous</button>            
+            </div>
+          </div>
+        </div>
+    </div> -->
+
+
+
+
+
+
+        <!-- <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a short card.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              </div>
+            </div>
+          </div> -->
+      </div>
+
+
+
+
+
+
+
+
+
+        <!-- Section "À Propos de Nous" -->
+        <section class="bg-success py-5  text-white " id="apropos">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3">
+                    <div class="col  text-start">
+                        <h2 class="mb-4">Agri</h2>
+                        <p>Coordonnées: </p>
+                        <p>Contacts: </p>
+
+                    </div>
+                    <div class="col  text-start">
+                        <h2 class="mb-4">Liens utiles</h2>
+                        <p>offres </p>
+                        <p>demandes </p>
+                        <p>Rejoindre le Réseau </p>
+                        <p>En savoir plus </p>
+
+                    </div>
+
+                    <div class="col text-center">
+                            <div class="row justify-content-start">
+                              <div class="col-md-6">
+                                    <h5 class="card-title text-start"> Inscrivez-vous à notre Newsletter</h5>
+                                    <form>
+                                      <div class="mb-3">
+                                        <input type="email" class="form-control mt-2" id="email" placeholder="Entrez votre email" required>
+                                      </div>
+                                      <button type="submit" class="btn btn-primary w-100">S'incrire</button>
+                                    </form>
+                                </div>
+                              </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+    
+    
+                    
+    
+        <footer class="bg-dark text-white py-4">
+            <div class="container text-center">
+                <p class="mb-0">© 2024 Agri demo. Tous droits réservés.</p>
+            </div>
+        </footer>
+
+        
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+
+<script>
+    $(document).ready(() =>{
+        $('.num').counterUp({
+            time:1200
+        });
+    });
+</script>
+
+</body>
+</html>

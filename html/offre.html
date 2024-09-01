@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Agri demo - Offres</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: 'Amazon Ember', sans-serif;
+        background-color: #f8f9fa;
+      }
+      .navbar-custom {
+        background-color: #343a40;
+      }
+      .card-title {
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+      .card-text {
+        font-size: 0.9rem;
+      }
+      .category-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-top: 1rem;
+      }
+      .category-container {
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      }
+      .footer {
+        background-color: #343a40;
+        color: #ffffff;
+        padding: 1rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark fixed-top navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Agri demo</a>
+          <button class="navbar-toggler mt-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Agri demo</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Offres</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Demandes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Rejoindre le Réseau</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">En savoir plus</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">À propos de nous</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="html/login.html">Connexion</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="container mt-5 pt-5">
+      <div class="row">
+        <div class="col-12 mb-4">
+          <h1 class="text-center">Nos Offres Agricoles</h1>
+        </div>
+
+        <!-- Fruits Category -->
+        <div class="col-12 mb-4">
+          <div class="category-container">
+
+            <div class="row">
+                <h2 class="category-title text-dark col">Fruits</h2>
+                <a href="#" class="col-1">Voir plus</a>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="../img/Fruits/download.jpg" class="card-img-top" alt="Mangue">
+                  <div class="card-body">
+                    <h5 class="card-title">Mangue</h5>
+                    <p class="card-text">Délicieuses mangues fraîches disponibles.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="../img/Fruits/OIP (1).jpg" class="card-img-top" alt="Orange">
+                  <div class="card-body">
+                    <h5 class="card-title">Orange</h5>
+                    <p class="card-text">Oranges juteuses et sucrées.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="../img/Fruits/OIP (2).jpg" class="card-img-top" alt="Fraise">
+                  <div class="card-body">
+                    <h5 class="card-title">Fraise</h5>
+                    <p class="card-text">Fraises fraîches et savoureuses.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="../img/Fruits/OIP (4).jpg" class="card-img-top" alt="Pomme">
+                  <div class="card-body">
+                    <h5 class="card-title">Pomme</h5>
+                    <p class="card-text">Pommes croquantes et sucrées.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cereales Category -->
+        <div class="col-12 mb-4">
+          <div class="category-container">
+            <div class="row">
+                <h2 class="category-title text-dark col">Céréales</h2>
+                <a href="#" class="col-1">Voir plus</a>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="../img/Céréales/OIP (1).jpg" class="card-img-top" alt="Blé">
+                  <div class="card-body">
+                    <h5 class="card-title">Blé</h5>
+                    <p class="card-text">Blé de haute qualité pour toutes vos recettes.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="../img/Céréales/OIP (2).jpg" class="card-img-top" alt="Riz">
+                  <div class="card-body">
+                    <h5 class="card-title">Riz</h5>
+                    <p class="card-text">Riz parfumé et nutritif.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="../img/Céréales/OIP (3).jpg" class="card-img-top" alt="Maïs">
+                  <div class="card-body">
+                    <h5 class="card-title">Maïs</h5>
+                    <p class="card-text">Maïs frais pour une variété d'utilisations.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="../img/Céréales/OIP (5).jpg" class="card-img-top" alt="Avoine">
+                  <div class="card-body">
+                    <h5 class="card-title">Avoine</h5>
+                    <p class="card-text">Avoine parfaite pour un petit-déjeuner sain.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fibres Category -->
+        <div class="col-12 mb-4">
+          <div class="category-container">
+            <div class="row">
+                <h2 class="category-title text-dark col">Fibres</h2>
+                <a href="#" class="col-1">Voir plus</a>
+            </div>
+            
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img src="../img/Fibres/OIP (2).jpg" class="card-img-top" alt="Coton">
+                  <div class="card-body">
+                    <h5 class="card-title">Coton</h5>
+                    <p class="card-text">Fibre de coton de qualité supérieure.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="../img/Fibres/OIP (1).jpg" class="card-img-top" alt="Chanvre">
+                  <div class="card-body">
+                    <h5 class="card-title">Chanvre</h5>
+                    <p class="card-text">Chanvre pour une multitude d'usages.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="../img/Fibres/download.jpg" class="card-img-top" alt="Lin">
+                  <div class="card-body">
+                    <h5 class="card-title">Lin</h5>
+                    <p class="card-text">Fibre de lin pour des tissus naturels.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card h-100">
+                  <img src="../img/Fibres/OIP (4).jpg" class="card-img-top" alt="Jute">
+                  <div class="card-body">
+                    <h5 class="card-title">Jute</h5>
+                    <p class="card-text">Fibre de jute robuste et polyvalente.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="footer text-center">
+      <div class="container">
+        <p>&copy; 2024 Agri demo. Tous droits réservés.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+yHk6Q3iHT8DgxVam6anM7/8j5fxAIg6zFREawQfWgPiG0etE2srzfrNxAzcQ7" crossorigin="anonymous"></script>
+  </body>
+</html>

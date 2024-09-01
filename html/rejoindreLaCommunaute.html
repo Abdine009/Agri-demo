@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de rejoindre la communauté des agriculteurs</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .auth-card {
+            height: 100vh;
+            display: flex;
+        }
+        .auth-card img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .auth-form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .form-container {
+            max-width: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row auth-card">
+            <div class="col-md-6 d-none d-md-block">
+                <img src="../img/africains-recoltent-legumes (1).jpg" alt="Agriculture">
+            </div>
+            <div class="col-md-6 col-12 auth-form">
+                <div class="form-container">
+                    <h2 class="mb-4">Rejoindre la communauté des agriculteurs</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="nom">Nom complet</label>
+                            <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Adresse email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Mot de passe</label>
+                            <input type="password" class="form-control" id="password" placeholder="Entrez votre mot de passe">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm_password">Confirmer le mot de passe</label>
+                            <input type="password" class="form-control" id="confirm_password" placeholder="Confirmez votre mot de passe">
+                        </div>
+                        <button type="submit" class="btn btn-success btn-block mb-4">Rejoindre</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
